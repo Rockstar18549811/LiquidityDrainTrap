@@ -8,8 +8,8 @@ interface IERC20 {
 }
 
 contract LiquidityDrainTrap is ITrap {
-    address public constant TOKEN = 0xFba1bc0E3d54D71Ba55da7C03c7f63D4641921B1;
-    address public constant POOL  = 0x0000000000000000000000000000000000000000;
+    address public constant TOKEN = 0x840D650ce282D3896AD6484C097c22bE4e1B4F7b;
+    address public constant POOL  = 0xCb5a0CdBa2d932E86715701d36222a911c4CcBC3;
     uint256 public constant THRESHOLD = 1000000000000000000; // 1 ETH
 
     struct CollectOutput {
@@ -30,3 +30,4 @@ contract LiquidityDrainTrap is ITrap {
         return (false, bytes(""));
     }
 }
+
